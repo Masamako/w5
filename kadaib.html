@@ -31,9 +31,9 @@ function checkCookie() {
   if (user != "" ) {
     alert("また見てくれてありがとう！、今日は" + user+"さん");
   } else {
-     user = prompt("はじめまして、名前を教えてください:","");
+     user = prompt("はじめまして、あなたの名前は何ですか:","");
      if (user != "" && user != null) {
-       setCookie("username", user, 1);
+       setCookie("2021web", user, 1);
      }
   }
 }
@@ -41,7 +41,7 @@ function checkCookie() {
 
 function delCookie()
 {
-  document.cookie = "username=; max-age=0; path=/";
+  document.cookie = "2021web=; max-age=0; path=/";
 }
   
 
